@@ -177,7 +177,7 @@ img {
     padding: 3%;
   }
 
-  p {
+  p.large-text {
     column-count: 1;
   }
 
