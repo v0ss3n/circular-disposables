@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Source+Serif+Pro:wght@300;400;600;700&display=swap");
 $pale-blue: #e2e9efff;
+$pink: #924e4e;
+$peach: #f7e9e2ff;
+$blue: #4e6992;
+$hover: #752828;
 
 $ff-roboto-mono: "Roboto Mono", monospace;
 $ff-source-serif-pro: "Source Serif Pro", serif;
@@ -9,7 +13,7 @@ html {
 }
 
 body {
-    margin: 0 auto;
+    margin: 0 auto 100px;
 }
 
 h1,
@@ -38,13 +42,47 @@ h2 {
     font-size: 1.5em;
 }
 
-p {
+p,
+a {
+    color: black;
     font-family: $ff-roboto-mono;
+}
+
+.large-text {
     column-count: 2;
 }
 
 .blue {
     background-color: $pale-blue;
+}
+
+.peach {
+    background-color: $peach;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $pale-blue;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+    max-width: 80%;
+    z-index: 1;
+
+    a {
+        color: $pink;
+        padding: 4px 1%;
+    }
+    
+    a:hover,
+    a:focus {
+        color: $hover;
+    }
 }
 
 .content {
@@ -67,6 +105,33 @@ p {
     &:hover,
     &:active {
         animation: spin 2s infinite linear;
+    }
+}
+
+footer {
+    margin-top: 60px;
+    p {
+        color: $blue;
+    }
+}
+
+// Columns
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+.columns--2 {
+    img {
+        width: 49%;
+    }
+}
+
+.columns--4 {
+    img {
+        width: 24%;
     }
 }
 
@@ -126,6 +191,20 @@ img {
 
     body {
         margin: 3%;
+    }
+
+    .menu {
+        display: inline-block;
+        top: 0;
+        padding: 0.5em 0;
+right: initial;
+left: initial;
+width: initial;
+max-width: initial;
+margin: 0;
+
+    padding: 3%;
+
     }
 
     p {
