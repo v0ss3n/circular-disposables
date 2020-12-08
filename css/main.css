@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,400&family=Source+Serif+Pro:wght@300;400;600;700&display=swap");
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  column-count: 2;
+}
+
+.blue {
+  background-color: #e2e9efff;
+}
+
+.content {
+  width: 960px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 500px;
+  max-width: 80%;
+}
+
+.logo--animated:hover, .logo--animated:active {
+  animation: spin 2s infinite linear;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  align-self: start;
+}
+
+.process-carousel .slick-slide img {
+  display: inline-block;
+}
+.process-carousel .slick-slide img:nth-of-type(1) {
+  width: 56.6%;
+  padding-right: 2%;
+}
+.process-carousel .slick-slide img:nth-of-type(2) {
+  width: 40%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    margin: 3%;
+  }
+
+  p {
+    column-count: 1;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
