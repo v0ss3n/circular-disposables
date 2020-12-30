@@ -21,6 +21,18 @@ $(document).ready(function () {
         cssEase: 'linear'
     });
 
+    $('.masks_process-carousel').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        cssEase: 'linear'
+    });
+
     $('.final-carousel').slick({
         dots: false,
         arrows: true,

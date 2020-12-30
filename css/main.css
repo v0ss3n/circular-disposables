@@ -148,6 +148,13 @@ img {
   width: 40%;
 }
 
+.masks_process-carousel .slick-list {
+  margin-right: -18px;
+}
+.masks_process-carousel .slick-slide {
+  padding-right: 18px;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
