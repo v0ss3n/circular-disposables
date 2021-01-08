@@ -43,9 +43,17 @@ h2 {
 }
 
 p,
-a {
+a,
+ul li,
+ol li,
+table {
     color: black;
     font-family: $ff-roboto-mono;
+}
+
+table,
+caption {
+    text-align: left;
 }
 
 .large-text {
@@ -138,6 +146,7 @@ footer {
 // Responsive videos
 
 .iframe-container {
+    margin: 24px 0;
     position: relative;
     overflow: hidden;
     width: 100%;
