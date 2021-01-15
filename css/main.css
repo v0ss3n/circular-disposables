@@ -94,12 +94,23 @@ caption {
 }
 
 .logo {
-  width: 500px;
-  max-width: 80%;
+  width: 200px;
+  max-width: 30%;
 }
 
 .logo--animated:hover, .logo--animated:active {
   animation: spin 2s infinite linear;
+}
+
+.final-overview {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.final-overview img {
+  width: 13%;
 }
 
 footer {
@@ -143,7 +154,7 @@ footer p {
 
 img {
   width: 100%;
-  align-self: start;
+  align-self: flex-start;
 }
 
 .process-carousel .slick-slide img {
@@ -157,10 +168,22 @@ img {
   width: 40%;
 }
 
-.masks_process-carousel .slick-list {
+.masks_process-carousel .slick-list,
+.final-carousel .slick-list {
   margin-right: -18px;
 }
-.masks_process-carousel .slick-slide {
+.masks_process-carousel .slick-slide,
+.final-carousel .slick-slide {
+  padding-right: 18px;
+}
+
+.final-overview-slider {
+  overflow: hidden;
+}
+.final-overview-slider .slick-list {
+  margin-right: -18px;
+}
+.final-overview-slider .slick-slide {
   padding-right: 18px;
 }
 

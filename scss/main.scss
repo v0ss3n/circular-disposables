@@ -105,14 +105,25 @@ caption {
 }
 
 .logo {
-    width: 500px;
-    max-width: 80%;
+    width: 200px;
+    max-width: 30%;
 }
 
 .logo--animated {
     &:hover,
     &:active {
         animation: spin 2s infinite linear;
+    }
+}
+
+.final-overview {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    img {
+        width: 13%;
     }
 }
 
@@ -165,7 +176,7 @@ footer {
 
 img {
     width: 100%;
-    align-self: start;
+    align-self: flex-start;
 }
 
 // Changes to Slick slider
@@ -183,7 +194,18 @@ img {
     }
 }
 
-.masks_process-carousel {
+.masks_process-carousel,
+.final-carousel {
+    .slick-list {
+        margin-right: -18px;
+      }
+    .slick-slide {
+        padding-right: 18px;
+    }
+}
+
+.final-overview-slider {
+    overflow: hidden;
     .slick-list {
         margin-right: -18px;
       }
