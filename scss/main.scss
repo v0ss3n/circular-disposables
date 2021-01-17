@@ -4,6 +4,7 @@ $pink: #924e4e;
 $peach: #f7e9e2ff;
 $blue: #4e6992;
 $hover: #752828;
+$highlight: #8b0909;
 
 $ff-roboto-mono: "Roboto Mono", monospace;
 $ff-source-serif-pro: "Source Serif Pro", serif;
@@ -20,7 +21,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+blockquote {
     font-family: $ff-source-serif-pro;
     font-weight: 600;
 }
@@ -38,8 +40,9 @@ h2 {
 
 .subtitle {
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.5em;
+    text-shadow: 1px 1px 2px #fff3e1, 0 0 29px #ffa67a, 0px 0px 13px #f7e9e2ff;
 }
 
 p,
@@ -51,6 +54,12 @@ table {
     font-family: $ff-roboto-mono;
 }
 
+blockquote {
+    font-size: 1.4em;
+    text-shadow: 1px 1px 2px #fff3e1, 0 0 29px #ffa67a, 0px 0px 13px #f7e9e2ff;
+    text-align: center;
+}
+
 table,
 caption {
     text-align: left;
@@ -58,6 +67,11 @@ caption {
 
 .large-text {
     column-count: 2;
+}
+
+.highlight {
+    // text-decoration: underline;
+    color: $highlight;
 }
 
 .blue {
@@ -151,6 +165,12 @@ footer {
 .columns--4 {
     img {
         width: 24%;
+    }
+}
+
+.columns--7 {
+    img {
+        width: 13.5%;
     }
 }
 
